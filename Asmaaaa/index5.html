@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Women's Fashion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fdf6f9 0%, #f6e9f2 100%);
+      overflow-x: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+      background-color: #ffffff;
+      border-bottom: 3px solid #e0cfe8;
+      flex-wrap: wrap;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .header-text {
+      max-width: 60%;
+    }
+
+    .header-text h1 {
+      font-size: 38px;
+      color: #7b518d;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      font-size: 22px;
+      color: #999;
+      margin: 10px 0;
+    }
+
+    .header-text p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .shop-btn {
+      background-color: #7b518d;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .shop-btn:hover {
+      background-color: #5e3c6d;
+    }
+
+    .header-img img {
+      width: 320px;
+      border-radius: 20px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background-color: #f4e6f5;
+      padding: 50px 30px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 16px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 20px;
+      transform: translateY(50px);
+      opacity: 0;
+      transition: 0.6s ease;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product h4 {
+      margin: 15px 0 8px;
+      color: #7b518d;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .product span {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-text">
+      <h1>Women's Fashion</h1>
+      <h2>Stylish & Elegant Picks</h2>
+      <p>Explore our exclusive range of fashion products for women. From chic dresses to trendy accessories, we've got your style covered.</p>
+      <button class="shop-btn">Explore Now</button>
+    </div>
+    <div class="header-img">
+      <img src="WhatsApp Image 2025-04-20 at 6.32.12 PM.jpeg" alt="Fashion Header">
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 6.32.12 PM (1).jpeg" alt="Dress">
+      <h4>Elegant Dress</h4>
+      <p>Soft and graceful design with pastel tones</p>
+      <span>$75</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 6.32.13 PM.jpeg" alt="Blouse">
+      <h4>Casual Blouse</h4>
+      <p>Comfortable cotton with relaxed style</p>
+      <span>$35</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 6.32.13 PM (1).jpeg" alt="Blazer">
+      <h4>Formal Blazer</h4>
+      <p>Perfect for work and smart occasions</p>
+      <span>$65</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 6.32.13 PM (2).jpeg" alt="Perfume">
+      <h4>Soft Perfume</h4>
+      <p>Floral scent that lasts all day</p>
+      <span>$40</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 6.32.13 PM (3).jpeg" alt="Bag">
+      <h4>Leather Handbag</h4>
+      <p>Neutral shades perfect for daily use</p>
+      <span>$55</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 6.32.13 PM (4).jpeg" alt="Sunglasses">
+      <h4>Trendy Sunglasses</h4>
+      <p>UV protection with stylish frames</p>
+      <span>$30</span>
+    </div>
+  </div>
+
+  <script>
+    const products = document.querySelectorAll('.product');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    products.forEach(product => {
+      observer.observe(product);
+    });
+  </script>
+
+</body>
+</html>

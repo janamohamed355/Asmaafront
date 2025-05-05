@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Women's Dresses</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #ffd6e8);
+      overflow-x: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+      background-color: #fff0f5;
+      flex-wrap: wrap;
+      animation: fadeIn 1.5s ease-in-out;
+      border-bottom: 3px solid #ffaad4;
+    }
+
+    .header-text {
+      max-width: 60%;
+      animation: slideInLeft 1s ease forwards;
+    }
+
+    .header-text h1 {
+      font-size: 42px;
+      color: #b4005f;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      font-size: 24px;
+      color: #d65f9a;
+      margin: 15px 0;
+    }
+
+    .header-text p {
+      font-size: 16px;
+      color: #5e5e5e;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .shop-btn {
+      background-color: #ff85b3;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.4s;
+      box-shadow: 0 6px 12px rgba(255, 133, 179, 0.4);
+    }
+
+    .shop-btn:hover {
+      background-color: #e64c93;
+      transform: scale(1.05);
+    }
+
+    .header-img img {
+      width: 340px;
+      border-radius: 20px;
+      animation: slideInRight 1s ease forwards;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 60px 40px;
+      background-color: #fff5fa;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(255, 133, 179, 0.2);
+      transition: transform 0.3s ease;
+      animation: popUp 1s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-12px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .product img:hover {
+      transform: scale(1.05);
+    }
+
+    .product h4 {
+      color: #c2185b;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #6a6a6a;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .product span {
+      font-weight: bold;
+      color: #d81b60;
+      font-size: 17px;
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      from { transform: translateX(100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popUp {
+      0% { transform: scale(0.95); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-text">
+      <h1>Elegant Style for Every Woman</h1>
+      <h2>Chic & Feminine Dresses</h2>
+      <p>Explore a stunning collection of dresses made for elegance and beauty. Soft fabrics, dreamy colors, and designs made to stand out.</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+    <div class="header-img">
+      <img src="WhatsApp Image 2025-04-20 at 7.43.30 PM.jpeg" alt="Dresses Banner">
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 7.43.31 PM.jpeg" alt="Dress 1">
+      <h4>Classic Pink Dress</h4>
+      <p>Sleek and elegant cut</p>
+      <span>$79</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 7.43.31 PM (1).jpeg" alt="Dress 2">
+      <h4>Soft Chiffon Dress</h4>
+      <p>Perfect for occasions</p>
+      <span>$92</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 7.43.31 PM (2).jpeg" alt="Dress 3">
+      <h4>Embroidered Rose Dress</h4>
+      <p>Delicate feminine detail</p>
+      <span>$109</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 7.43.31 PM (3).jpeg" alt="Dress 4">
+      <h4>Sheer Sleeve Dress</h4>
+      <p>Subtle and graceful</p>
+      <span>$88</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 7.43.32 PM.jpeg" alt="Dress 5">
+      <h4>Fluffy Long Dress</h4>
+      <p>Princess vibes</p>
+      <span>$120</span>
+    </div>
+    <div class="product">
+      <img src="WhatsApp Image 2025-04-20 at 7.43.32 PM (1).jpeg" alt="Dress 6">
+      <h4>Modern Plain Dress</h4>
+      <p>Elegant everyday style</p>
+      <span>$65</span>
+    </div>
+  </div>
+
+</body>
+</html>

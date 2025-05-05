@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skincare Collection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f6fdfb;
+    }
+
+    .header {
+      background-color: #e0f7f1;
+      padding: 60px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #b3e0d6;
+    }
+
+    .header-text {
+      max-width: 55%;
+    }
+
+    .header-text h1 {
+      font-size: 36px;
+      color: #2e7d6c;
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .shop-btn {
+      margin-top: 20px;
+      background-color: #2e7d6c;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .shop-btn:hover {
+      background-color: #246258;
+    }
+
+    .header-img img {
+      width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .products {
+      background-color: #f0fef9;
+      padding: 50px 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 16px;
+      width: 240px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-8px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .product h4 {
+      margin: 15px 0 8px;
+      color: #2e7d6c;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .product span {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-text">
+      <h1>Natural Skincare</h1>
+      <p>Keep your skin fresh and glowing with our latest skincare products. Gentle ingredients, elegant formulas, and luxurious textures made just for you.</p>
+      <button class="shop-btn">Explore Collection</button>
+    </div>
+    <div class="header-img">
+      <img src="00.jpeg" alt="Skincare Banner">
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <img src="011.jpeg" alt="Cleanser">
+      <h4>Gentle Cleanser</h4>
+      <p>Soothes and refreshes your skin</p>
+      <span>$25</span>
+    </div>
+
+    <div class="product">
+      <img src="02.jpeg" alt="Serum">
+      <h4>Hydrating Serum</h4>
+      <p>Locks in moisture all day</p>
+      <span>$35</span>
+    </div>
+
+    <div class="product">
+      <img src="03.jpeg" alt="Moisturizer">
+      <h4>Glow Moisturizer</h4>
+      <p>Gives a soft, radiant finish</p>
+      <span>$30</span>
+    </div>
+
+    <div class="product">
+      <img src="04.jpeg" alt="Face Mask">
+      <h4>Herbal Face Mask</h4>
+      <p>Detox and revive tired skin</p>
+      <span>$28</span>
+    </div>
+  </div>
+
+</body>
+</html>

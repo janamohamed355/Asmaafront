@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Shoes & Sandals</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0f7fa;
+      transition: background-color 0.3s ease;
+    }
+
+    .header {
+      background-color: #81d4fa;
+      padding: 60px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #4fc3f7;
+      transition: transform 0.3s ease;
+    }
+
+    .header:hover {
+      transform: scale(1.05);
+    }
+
+    .header-text {
+      max-width: 55%;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .header-text h1 {
+      font-size: 36px;
+      color: #0288d1;
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeInText 2s 1s forwards;
+    }
+
+    .shop-btn {
+      margin-top: 20px;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .shop-btn:hover {
+      background-color: #01579b;
+      transform: scale(1.1);
+    }
+
+    .header-img img {
+      width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .header-img img:hover {
+      transform: rotate(10deg);
+    }
+
+    .products {
+      background-color: #b3e5fc;
+      padding: 50px 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 16px;
+      width: 240px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .product img:hover {
+      transform: scale(1.1);
+    }
+
+    .product h4 {
+      margin: 15px 0 8px;
+      color: #0288d1;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .product span {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .category-title {
+      font-size: 28px;
+      color: #0288d1;
+      text-align: center;
+      margin-top: 40px;
+      opacity: 0;
+      animation: fadeInText 2s 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-text">
+      <h1>Health Shoes & Sandals</h1>
+      <p>Explore our collection of comfortable and stylish health shoes and sandals. Suitable for both men and women, crafted to support your feet with elegance and comfort.</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+    <div class="header-img">
+      <img src="h1 (1).jpeg" alt="Shoes Image">
+    </div>
+  </div>
+
+  <div class="category-title">Men's Collection</div>
+  <div class="products">
+    <div class="product">
+      <img src="h1 (8).jpeg" alt="Men's Sandal 1">
+      <h4>Men's Leather Sandal</h4>
+      <p>Comfortable and durable leather sandals for everyday use</p>
+      <span>$65</span>
+    </div>
+
+    <div class="product">
+      <img src="h1 (9).jpeg" alt="Men's Sport Shoes">
+      <h4>Men's Sport Shoes</h4>
+      <p>Breathable, flexible shoes for sports and outdoor activities</p>
+      <span>$75</span>
+    </div>
+
+    <div class="product">
+      <img src="h1 (6).jpeg" alt="Men's Casual Shoes">
+      <h4>Men's Casual Shoes</h4>
+      <p>Stylish and comfortable shoes perfect for casual wear</p>
+      <span>$80</span>
+    </div>
+
+    <div class="product">
+      <img src="h1 (2).jpeg" alt="Men's Slip-On Shoes">
+      <h4>Men's Slip-On Shoes</h4>
+      <p>Easy-to-wear slip-ons with a relaxed fit</p>
+      <span>$50</span>
+    </div>
+  </div>
+
+  <div class="category-title">Women's Collection</div>
+  <div class="products">
+    <div class="product">
+      <img src="h1 (3).jpeg" alt="Women's Sandal 1">
+      <h4>Women's Elegant Sandal</h4>
+      <p>Perfect for evening wear with elegant designs</p>
+      <span>$60</span>
+    </div>
+
+    <div class="product">
+      <img src="h1 (4).jpeg" alt="Women's Wedge Sandal">
+      <h4>Women's Wedge Sandal</h4>
+      <p>Comfortable wedge sandals for a stylish look</p>
+      <span>$50</span>
+    </div>
+
+    <div class="product">
+      <img src="h1 (5).jpeg" alt="Women's Flat Sandal">
+      <h4>Women's Flat Sandal</h4>
+      <p>Simple and casual sandals for everyday wear</p>
+      <span>$40</span>
+    </div>
+
+    <div class="product">
+      <img src="h1 (7).jpeg" alt="Women's Sport Shoes">
+      <h4>Women's Sport Shoes</h4>
+      <p>Perfect for active women looking for comfort and style</p>
+      <span>$85</span>
+    </div>
+  </div>
+
+</body>
+</html>
